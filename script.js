@@ -94,6 +94,8 @@ const createCard = (book) => {
   let overview;
   if(book.overview.length > 100 ){
     overview = book.overview.slice(0,100)+ "....";
+  }else{
+    overview = book.overview;
   }
 
   div.innerHTML = `
